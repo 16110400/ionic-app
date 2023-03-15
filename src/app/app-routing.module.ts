@@ -26,6 +26,14 @@ const routes: Routes = [
   {
     path: 'kontak',
     loadChildren: () => import('./pages/kontak/kontak.module').then( m => m.KontakPageModule)
+  },
+  {
+    path: 'movies',
+    loadChildren: () => import('./pages/movies/movies.module').then( m => m.MoviesPageModule)
+  },
+  {
+    path: 'movies/:id',
+    loadChildren: () => import('./pages/movie-details/movie-details.module').then( m => m.MovieDetailsPageModule)
   }
 ];
 
